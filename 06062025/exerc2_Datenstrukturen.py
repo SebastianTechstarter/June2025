@@ -14,7 +14,7 @@ users_list = input(
     "Gib mir eine Folge mit ganzen Zahlen, getrennt durch Leerzeichen: "
 ).split()
 new_list = list(map(int, users_list))
-# print(new_list)
+print(new_list)
 new_set = set(new_list)
 print(new_set)
 
@@ -26,4 +26,4 @@ for number in new_list:
     else:
         count_dict[number] = 1
 
-print("Häufigkeiten: " + count_dict)
+print("Häufigkeiten:", count_dict)
